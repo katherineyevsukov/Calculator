@@ -10,13 +10,13 @@ body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
-.calculator-grid {
+ .calculator-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-rows: minmax(110px, auto) repeat(5, 90px);
 }
 
 .calculator-grid > button {
@@ -28,7 +28,7 @@ body {
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, .0);
+    background-color: rgba(255, 255, 255, .90);
 }
 
 .span-two{
@@ -45,4 +45,14 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+}  
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
 }
